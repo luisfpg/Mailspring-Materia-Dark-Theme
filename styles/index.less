@@ -50,3 +50,27 @@ img.content-light {
 .thread-list .list-item:not(.unread):not(.selected):not(.focused) {
   color: #aaa;
 }
+
+.sidebar-activity,
+.sidebar-activity .item h2 {
+  color: @text-color-inverse-subtle;
+}
+
+.sidebar-activity .item .count {
+  color: @text-color-inverse-very-subtle;
+}
+
+.secondary-items .item:hover {
+  color: @text-color;
+  background-color: yellow;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap {
+  &, .RichEditor-toolbar .inner {
+    background-color: @background-primary;
+  }
+
+  .composer-action-bar-wrap, &.focused .composer-action-bar-wrap {
+    background-color: #384252;
+  }
+}

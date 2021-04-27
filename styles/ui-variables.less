@@ -13,10 +13,10 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 @white: #0a0a0a;
 
 @accent-primary: #8ab4f8;
-@accent-primary-dark: #8ab4f8;
+@accent-primary-dark: @accent-primary;
 
 @background-primary: #272727;
-@background-off-primary: #272727;
+@background-off-primary: @accent-primary;
 @background-secondary: #121212;
 @background-tertiary: #2f2f2f;
 
@@ -43,10 +43,10 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 @input-bg: #2f2f2f;
 @input-border: @border-color-divider;
 
-@list-bg: #2f2f2f;
-@list-border: #0d0d0d;
+@list-bg: @input-bg;
+@list-border: @background-secondary;
 @list-selected-color: @text-color-inverse;
 @list-focused-color: @text-color-inverse;
 
-@toolbar-background-color: #121212;
-@panel-background-color: #121212;
+@toolbar-background-color: @background-secondary;
+@panel-background-color: @background-secondary;
