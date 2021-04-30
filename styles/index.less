@@ -60,17 +60,20 @@ img.content-light {
   color: @text-color-inverse-very-subtle;
 }
 
-.secondary-items .item:hover {
-  color: @text-color;
-  background-color: yellow;
-}
-
 #message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap {
   &, .RichEditor-toolbar .inner {
     background-color: @background-primary;
   }
 
   .composer-action-bar-wrap, &.focused .composer-action-bar-wrap {
-    background-color: #384252;
+    background-color: @background-themed;
   }
+}
+
+.list-container .list-item.focused .mail-label {
+  color: @text-color-inverse !important;
+}
+
+.nylas-attachment-item .inner {
+  background-color: @background-themed;
 }
